@@ -3,32 +3,73 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1024px)" href="css/style_portable.css">
     <title>Index</title>
   </head>
   <body>
-    <img src="" alt="logo">
-    <ul>
-      <li>Accueil</li>
-      <li>Titre</li>
-      <li>Contact</li>
-    </ul>
-    <input type="search" name="rechercher" value="" placeholder="Rechercher">
-    <img src="" alt="banniere">
-    <h1>Titre</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a nisi in enim sollicitudin rutrum vel et massa. Curabitur placerat rhoncus magna, id pulvinar nibh mollis at. Morbi blandit bibendum purus, eget venenatis ipsum rutrum at. Aliquam erat volutpat. Sed efficitur mi vel sem finibus tempus. Nam molestie porttitor nunc non hendrerit. Curabitur et risus sapien. Integer bibendum ullamcorper ligula, eu imperdiet lorem facilisis vitae. Nam tellus orci, fermentum non pellentesque sed, aliquam ac urna. Donec ornare aliquet mauris id rhoncus. Phasellus vitae placerat dui. Ut eget sem quam. Phasellus ut lacus cursus, vehicula erat in, bibendum tellus. Aliquam imperdiet tellus sit amet volutpat finibus.</p>
-    <p><img src="" alt="img1">Titre1</p>
-    <p><img src="" alt="img2">Titre2</p>
-    <p><img src="" alt="img3">Titre3</p>
-    <p><img src="" alt="img4">Titre4</p>
-    <h2>Titreh2 1</h2>
-    <img src="" alt="carte">
-    <h2>Titreh2 2</h2>
-    <input type="text" name="prenom" value="" placeholder="prenom">
-    <input type="text" name="nom" value=""placeholder="nom">
-    <input type="date" name="" value="">
-    <input type="text" name="" value="" placeholder="ville_naissance">
-    <input type="email" name="" value="" placeholder="mail">
-    <input type="text" name="" value="" placeholder="image">
-    <textarea name="message" rows="8" cols="80" placeholder="message"></textarea>
+    <header>
+      <img src="img/logo.jpg" alt="logo">
+      <div id="menu">
+        <ul>
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#">Titre</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><input type="search" name="rechercher" value="" placeholder="Rechercher"></li>
+          <li><button type="button" name="button">OK</button></li>
+        </ul>
+      </div>
+    </header>
+      <img id="banniere" src="img/bambou.jpg" alt="banniere panda roux">
+      <div id="contenu">
+      <h1>Le panda roux</h1>
+      <p>Le petit panda est de la taille d'un renard : le corps sans la queue mesure de 50 à 65 cm, la queue mesure de 30 à 60 cm. Les mâles pèsent de 3,5 à 6,2 kg et les femelles de 3 à 6 kg9,10.</p>
+      <p>Le bout des oreilles, les sourcils et les joues sont blancs tandis que le museau et la gueule sont noirs ; une bande brune raye le museau et les joues ; les courtes pattes sont noires et le reste du corps est roux. Sa queue, d’une quarantaine de centimètres, s'orne de neuf bandes blanches et jaunes et finit par une touffe noire. Ses griffes puissantes lui permettent de descendre des arbres la tête en bas.</p>
+      <p>À l'instar des pandas géants avec lesquels ils partagent de nombreux territoires, les petits pandas ont un régime alimentaire principalement végétarien. Ils mangent de grandes quantités de bambous, mais leur régime alimentaire comprend également des fruits, des racines, des glands et du lichen. Au printemps, ils se nourrissent aussi d’œufs et d’oisillons.</p>
+      <p>Leur aire de répartition est vaste : elle couvre à l'ouest certaines parties de l'Himalaya (Népal, Sikkim indien, Bhoutan) et, à l'est, le nord de la Birmanie et les provinces chinoises du Tibet, Sichuan et du Yunnan.</p>
+      <div id="img">
+        <div class="">
+          <img id="img1" src="img/debile.jpg" alt="panda roux debile">
+          <h2>Michel</h2>
+          <p>Panda roux debile</p>
+        </div>
+        <div class="">
+          <img id="img2" src="img/pandarigolo.jpg" alt="panda qui rigole">
+          <h2>Dédé</h2>
+          <p>Panda roux qui rigole</p>
+        </div>
+        <div class="">
+          <img id="img3" src="img/allonge.jpg" alt="panda roux allongé">
+          <h2>Gerard</h2>
+          <p>Panda roux allongé</p>
+        </div>
+        <div class="">
+          <img id="img4" src="img/panda.jpg" alt="panda roux">
+          <h2>Jean claude</h2>
+          <p>Panda roux qui se cache</p>
+        </div>
+      </div>
+      <div id="div">
+        <div id="carte">
+          <h2>Zone d'habitation</h2>
+          <iframe style="border: 0;" src="https://www.google.fr/maps/place/Tibet,+Chine/@31.5899879,84.2530881,6z/data=!3m1!4b1!4m5!3m4!1s0x3761317e9c4a2cc1:0x1fc12c628413da99!8m2!3d29.647535!4d91.117525" width="600" height="450" frameborder="0"></iframe>
+        </div>
+        <form id="formulaire" action="index.html" method="post">
+          <h2>Inscription</h2>
+          <p class="p1">
+            <input type="text" name="prenom" value="" placeholder="prenom">
+            <input class="nom" type="text" name="nom" value=""placeholder="nom">
+          </p>
+          <p class="p2">
+            <input type="date" name="" value="">
+            <input class="naissance" type="text" name="" value="" placeholder="ville_naissance">
+          </p>
+          <input class="mail" type="email" name="" value="" placeholder="mail">
+          <p><input class="photo" type="text" name="" value="" placeholder="photo"></p>
+          <textarea name="message" placeholder="message"></textarea>
+          <p><button type="button" name="button">Envoyer</button></p>
+        </form>
+      </div>
+    </div>
+    <footer><p>Huyghes Quentin TPC</p></footer>
   </body>
 </html>
