@@ -35,6 +35,14 @@ header img{
   width: 10%;
 }
 
+header .burger{
+  display: none;
+}
+
+header .tel{
+  display: none;
+}
+
 #menu{
   float: right;
   margin-top: 1%;
@@ -90,9 +98,8 @@ header img{
   width: 45%;
 }
 
-#carte img{
-  border: 1px solid black;
-  width: 100%;
+#carte iframe{
+  width: 70%;
 }
 
 #formulaire{
