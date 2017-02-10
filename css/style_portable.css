@@ -69,6 +69,14 @@ header #menu{
   display: none;
 }
 
+.menu{
+	text-align: center;
+}
+
+.menuli{
+	display: block;
+}
+
 header img{
   width: 20%;
   display: block;
