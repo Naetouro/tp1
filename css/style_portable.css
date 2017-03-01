@@ -161,6 +161,15 @@ header .tel{
 	margin-bottom: 5%;
 }
 
+#resultat p{
+  text-align: center;
+}
+
+#resultat button{
+	display: block;
+  width: 100%;
+}
+
 footer{
   border-top: 1px solid black;
 }

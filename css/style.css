@@ -140,6 +140,10 @@ header .tel{
   float: right;
 }
 
+#resultat{
+  margin-top: 2%;
+}
+
 footer{
   text-align: right;
   border-top: 1px solid black;

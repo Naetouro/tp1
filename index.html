@@ -3,18 +3,22 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta charset="utf-8">
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" media="screen and (min-width: 730px) and (max-width: 1240px)" href="css/style_tablette.css">
     <link rel="stylesheet" media="screen and (min-width: 320px) and (max-width: 720px)" href="css/style_portable.css">
-    <link rel="stylesheet" media="screen and (orientation: landscape)" href="css/style_landscape.css">
+    <link rel="stylesheet" media="screen and (min-width: 200dpi) and (orientation: landscape)" href="css/style_landscape.css">
+
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
     <link rel="manifest" href="manifest.json">
     <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
     <meta name="theme-color" content="#ffffff">
+
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
+    
     <title>Index</title>
   </head>
   <body>
@@ -70,19 +74,28 @@
         <form id="formulaire" action="index.html" method="post">
           <h2>Inscription</h2>
           <p class="p1">
-            <input type="text" name="prenom" value="" placeholder="prenom">
-            <input class="nom" type="text" name="nom" value=""placeholder="nom">
+            <input class="prenom" type="text" name="prenom"  placeholder="prenom">
+            <input class="nom" type="text" name="nom" value="" placeholder="nom">
           </p>
           <p class="p2">
-            <input type="date" name="" value="">
+            <input class="date" type="date" name="" value="">
             <input class="naissance" type="text" name="" value="" placeholder="ville_naissance">
           </p>
           <input class="mail" type="email" name="" value="" placeholder="mail">
           <p><input class="photo" type="file" name="" value="" placeholder="photo" accept="image/*" capture></p>
-          <textarea id="message" name="message" placeholder="message"></textarea>
-          <p><button id="button" type="button" name="button">Envoyer</button></p>
+          <textarea class="message" name="message" placeholder="message"></textarea>
+          <p><button class="envoyer" type="button" name="button">Envoyer</button></p>
         </form>
-        <span id="test"></span>
+      </div>
+      <div id="resultat">
+        <button class="afficher" type="button" name="button">Afficher</button>
+        <button class="effacer" type="button" name="button">effacer</button>
+        <p class="resprenom"></p>
+        <p class="resnom"></p>
+        <p class="resdate"></p>
+        <p class="resnaissance"></p>
+        <p class="resmail"></p>
+        <p class="resmessage"></p>
       </div>
     </div>
     <footer><p>Huyghes Quentin TPC</p></footer>
