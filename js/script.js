@@ -14,4 +14,14 @@ $(document).ready(function(){
       open=false;
   }
   });
+
+  $("#button").click(function(){
+    if (typeof(Storage) !== "undefined") {
+      
+      localStorage.setItem("message", $("#message").val());
+      $("#test").html(localStorage.getItem("message"));
+    } else {
+      alert("marche pas");
+    }
+  });
 });

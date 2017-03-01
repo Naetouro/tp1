@@ -4,8 +4,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" media="screen and (min-width: 730px) and (max-width: 1240px) and (orientation: landscape)" href="css/style_tablette.css">
+    <link rel="stylesheet" media="screen and (min-width: 730px) and (max-width: 1240px)" href="css/style_tablette.css">
     <link rel="stylesheet" media="screen and (min-width: 320px) and (max-width: 720px)" href="css/style_portable.css">
+    <link rel="stylesheet" media="screen and (orientation: landscape)" href="css/style_landscape.css">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
@@ -19,7 +20,7 @@
   <body>
     <header>
       <img class="burger" src="img/burgerfail2.png" alt="menu">
-      <a href="tel:0669696969"><img class="tel" src="img/tel2.png" alt="tel"></a>
+      <a href="tel:3919"><img class="tel" src="img/tel2.png" alt="tel"></a>
       <img src="img/logo.jpg" alt="logo">
       <div id="menu">
         <ul>
@@ -78,9 +79,10 @@
           </p>
           <input class="mail" type="email" name="" value="" placeholder="mail">
           <p><input class="photo" type="file" name="" value="" placeholder="photo" accept="image/*" capture></p>
-          <textarea name="message" placeholder="message"></textarea>
-          <p><button type="button" name="button">Envoyer</button></p>
+          <textarea id="message" name="message" placeholder="message"></textarea>
+          <p><button id="button" type="button" name="button">Envoyer</button></p>
         </form>
+        <span id="test"></span>
       </div>
     </div>
     <footer><p>Huyghes Quentin TPC</p></footer>
